@@ -18,4 +18,26 @@ function getComputerChoice() {
     }
 }
 
-console.log(getComputerChoice())
+// validate human choice against Array of choices
+function validateHumanChoice(choice){
+
+const OPTIONS = ["rock","paper","scissors"]
+
+ return OPTIONS.includes(choice) ?  true :false
+
+}
+
+// Get human choice from a prompt
+function getHumanChoice() {
+     
+    let choice = prompt("Type one option", "rock, paper, scissors")
+
+    if (choice !== null){
+        return validateHumanChoice(choice) ? choice : "Please type in a valid option"
+        
+    }
+    
+    
+}
+
+console.log(getHumanChoice())

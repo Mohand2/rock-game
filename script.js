@@ -1,7 +1,7 @@
 let humanScore = 0;
 let computerScore = 0;
 
-// This function returns string according to a randon undex in range [0-2]
+// This function returns a string according to a random index in range [0-2]
 
 function getComputerChoice() {
     let index = Math.floor(Math.random() * 3);

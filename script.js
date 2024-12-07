@@ -98,5 +98,5 @@ function playGame() {
 }
 
 
-
+window.alert('Please use the console to play the game ')
 console.log(playGame())
